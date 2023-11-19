@@ -4,53 +4,19 @@
 **<h2>Presentation</h2>**
 
 <p>
-This simple repository should help you quickstart a django app in no time. 
+This simple repository should help you quickstart a django app in no time.
+The project will be created in the same folder as this directory.
 </p>
 
 ___
 
 **<h2>Instructions</h2>**
 
-You only need **pip** and **python3** to install the project depencies on your local setup and launch the server.
+You only need **pip** and **python3** to start your project.
 
-Create a virtual environement:
+Just execute the bash script and follow instructions:
 ```bash
-python3 -m venv ./.venv
-source ./.venv/bin/activate
+sudo bash ./django_quickstart.sh
 ```
-
-Upgrade pip and install dependencies:
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-Create Django project
-```bash
-cd ..
-django-admin startproject my_project
-cd my_project
-```
-
-To initiate our database, we do our first data migration:
-
-```bash
-python3 manage.py migrate --run-syncdb
-```
-
-To navigate through our database with a GUI, we can create a super user via this prompt:
-
-```bash
-python3 manage.py createsuperuser
-```
-
-
-To run the Django server locally, we use:
-
-```bash
-python3 manage.py runserver
-```
-
-The server should now be running and you should be able to access the  <a href=http://localhost:8000/admin> admin back office </a> with the previously entered credentials.
 
 ___
